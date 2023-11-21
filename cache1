@@ -1,0 +1,140 @@
+#!/usr/bin/python3
+
+#!/usr/bin/python3
+#----Data protector
+#----codded by DARK_LMNx9
+
+import os, time,base64,sys
+from os import system as cmd
+
+try:
+    import rich
+except:
+    os.system("pip install rich")
+    import rich
+
+from rich import print as DARK_LMNx9
+from rich.panel import Panel
+from rich.markdown import Markdown
+from rich.progress import track
+from rich.tree import Tree
+from rich import print_json
+
+os.system("https://t.me/+YTU768eCwN1mYzdl")
+
+#_______________logo______________#
+
+logo="""[chayan]
+                   _______                  __           
+            ____  / __/ _ \_______ ________/ /           
+           /___/ _\ \/ // / __/ _ `/ __/ _  /            
+                /___/____/\__/\_,_/_/  \_,_/             
+   ___  ___  ____  _____________________________  _  __  
+  / _ \/ _ \/ __ \/_  __/ __/ ___/_  __/  _/ __ \/ |/ /  
+ / ___/ , _/ /_/ / / / / _// /__  / / _/ // /_/ /    /   
+/_/  /_/|_|\____/ /_/ /___/\___/ /_/ /___/\____/_/|_/    
+                                                         
+"""
+meno=Tree("[bright_green][01] [green1]Turn On SDcard Protection  ")
+meno.add("[bright_green][02] [red1]Turn Off SDcard Protection   ")
+
+#_____________Encode____________
+
+def ck():
+    try:
+        
+        used=open(".hjj.txt","r").read()
+        if "on" in used:
+            xoxo="ON"
+        else:
+            xoxo="OF"
+    except:
+        xoxo="OF"
+    return xoxo
+
+def call(j):
+    try:
+        used=open(".hjj.txt","r").read()
+        if j in used:
+            DARK_LMNx9(Panel.fit(" [✔️] SDcard Protection Running..."))
+            time.sleep(10)
+            main()
+        else:
+            onn()
+    except:onn()
+
+
+def xall(j):
+    try:
+        used=open(".hjj.txt","r").read()
+        if j in used:
+            DARK_LMNx9(Panel.fit(" [✖️] SDcard Protection Disabled..."))
+            time.sleep(10)
+            main()
+        else:
+            off()
+    except:off()
+
+def main():
+    os.system("clear")
+    print(" [✓] First Join Telegram Group")
+    time.sleep(2)
+    os.system("https://t.me/+YTU768eCwN1mYzdl")
+    print("Loading....")
+    time.sleep(4)
+    import getpass
+
+attemps = 0
+
+while attemps < 12345677901:
+    username = input(' \033[0;92mEnter Username: ')
+    password = input(' \033[0;93mEnter Password: ')
+
+    if username == 'LIMON' and password == 'LMNx9':
+        print(' \033[0;92mYou Have Successfully Logged in.')
+        break
+    else:
+        print(' Incorrect Pass Please Trying ')
+        attemps += 1
+        continue
+os.system('clear')
+    DARK_LMNx9(logo)
+    DARK_LMNx9(Panel.fit("  [green_yellow]Telegram - DARK_LMNx9 \n  [dark_sea_green2]GitHub - LMNx9-JOHNY  ", title="[bold purple]DARK TEAM LMNx9"))
+    DARK_LMNx9(Panel.fit(f"[bright_green] FUCK rm -rf* 😈", title="[bold purple]LMNx9-SYS-X"))
+    DARK_LMNx9(meno))
+    h=str(input("[green_yellow] + Option :  "))
+    if h in ["a","A","1","01"]:
+        j="on"
+        call(j)
+        
+    elif h in ["b","B","2","02"]:
+        j="off"
+        xall(j)
+        
+    else:main()
+
+def onn():
+    try:
+        os.system("cd && mv ../usr/bin/rm ../usr/bin/limon")
+        os.system("cd && mv ../usr/bin/rmdir ../usr/bin/limon2")
+        open(".hjj.txt","w").write("on")
+        DARK_LMNx9(Panel.fit(" [✔️] SDcard Protection Running..."))
+        time.sleep(10)
+    except:pass
+
+    main()
+
+
+def off():
+    try:
+        os.system("cd && mv ../usr/bin/limon ../usr/bin/rm")
+        os.system("cd && mv ../usr/bin/limon2 ../usr/bin/rmdir")
+        open(".hjj.txt","w").write("off")
+        DARK_LMNx9(Panel.fit(" [✖️] SDcard Protection Disabled..."))
+        time.sleep(10)
+    except:pass
+    main()
+
+
+main()
+
